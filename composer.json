@@ -17,10 +17,7 @@
             "init.php"
         ],
         "psr-4": {
-            "Bolt\\Extension\\Bolt\\DiyForms\\": [
-                "",
-                "src/"
-            ]
+            "Bolt\\Extension\\Bolt\\DiyForms\\": "src"
         }
     },
     
