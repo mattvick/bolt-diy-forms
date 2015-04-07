@@ -2,9 +2,6 @@
     "name": "mattvick/bolt-diy-forms",
     "description": "Example bolt extension demonstrating how to bind a form to a route and submit it's data to a contenttype.",
     "type": "bolt-extension",
-    "keywords" : [
-        ""
-    ],
     "require": {
         "bolt/bolt": ">=2.0.0,<3.0.0"
     },
