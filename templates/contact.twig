@@ -1,0 +1,11 @@
+{% include '_header.twig' %}
+
+{# 
+	HTML 5 validation has been disabled to reveal the Symfony forms validation
+	the fom could be added to the template with HTML validation enabled more simply as follows:
+
+	{{ form(form, {'method': 'POST'}) }}
+#}
+{{ form(form, {'method': 'POST', 'attr': {'novalidate': 'novalidate'}}) }}
+
+{% include '_footer.twig' %}
