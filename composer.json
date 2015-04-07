@@ -2,16 +2,21 @@
     "name": "mattvick/bolt-diy-forms",
     "description": "Example bolt extension demonstrating how to bind a form to a route and submit it's data to a contenttype.",
     "type": "bolt-extension",
+    "keywords" : [
+        ""
+    ],
     "require": {
         "bolt/bolt": ">=2.0.0,<3.0.0"
     },
-    "license": "MIT",
+    "license" : "GPL-3.0+",
     "authors": [
         {
             "name": "Matthew Vickery", 
             "email": "vickery.matthew@gmail.com"
         }
     ],
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
     "autoload": {
         "files": [
             "init.php"
@@ -22,6 +27,9 @@
     },
     
     "extra": {
-        "bolt-assets": "assets"
+        "bolt-assets": "assets",
+        "branch-alias" : {
+            "dev-master" : "2.2.*-dev"
+        }
     }
 }
