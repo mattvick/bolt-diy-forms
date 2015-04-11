@@ -1,6 +1,6 @@
 <?php
 
-namespace Bolt\Extension\Bolt\DiyForms\Form\Type;
+namespace Bolt\Extension\Mattvick\DiyForms\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

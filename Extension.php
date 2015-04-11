@@ -1,11 +1,16 @@
 <?php
 
-namespace Bolt\Extension\Bolt\DiyForms;
+namespace Bolt\Extension\Mattvick\DiyForms;
+
+// https://docs.bolt.cm/extensions/config
+// local extensions have no autoloader by default. 
+// Use include_once in Extension.php to load any additional class files you may create. 
+// If you move the extension to an external repository, remove the include_once lines.
+include_once __dir__ . '/src/Form/Type/ContactType.php';
 
 use Bolt\Application;
 use Bolt\BaseExtension;
-// use Mahango\Form\Type\ContactType;
-use Bolt\Extension\Bolt\DiyForms\Form\Type\ContactType;
+use Bolt\Extension\Mattvick\DiyForms\Form\Type\ContactType;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -55,7 +60,7 @@ class Extension extends BaseExtension
 
     public function showForm(Request $request, $errors = null)
     {
-        // create a symfony forms object
+        // create a form from a form class
         $form = $this->app['form.factory']->create(new ContactType(), array());
 
         $form->handleRequest($request);

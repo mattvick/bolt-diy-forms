@@ -19,14 +19,11 @@
             "init.php"
         ],
         "psr-4": {
-            "Bolt\\Extension\\Bolt\\DiyForms\\": "src"
+            "Bolt\\Extension\\Mattvick\\DiyForms\\": "src"
         }
     },
     
     "extra": {
-        "bolt-assets": "assets",
-        "branch-alias" : {
-            "dev-master" : "2.2.*-dev"
-        }
+        "bolt-assets": "assets"
     }
 }
